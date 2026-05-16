@@ -230,9 +230,9 @@ with col_ctrl:
         st.markdown('<p class="sec">Données</p>', unsafe_allow_html=True)
 
         if content_type == "URL":
-            url     = st.text_input("URL", value="https://claude.ai", placeholder="https://…", label_visibility="collapsed")
-            qr_data = url or "https://claude.ai"
-
+            url     = st.text_input("URL", value="https://www.oca.eu/fr/accueil", placeholder="https://…", label_visibility="collapsed")
+            qr_data = url or "https://www.oca.eu/fr/accueil"
+            
         elif content_type == "Texte libre":
             txt     = st.text_area("Texte", placeholder="Votre texte…", height=90, label_visibility="collapsed")
             qr_data = txt or "Texte vide"
